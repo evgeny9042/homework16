@@ -1,6 +1,6 @@
 
-#include <C:/otus/dlib-19.18/dlib/clustering.h>
-#include <C:/otus/dlib-19.18/dlib/rand.h>
+#include <dlib/clustering.h>
+#include <dlib/rand.h>
 
 #include <iostream>
 #include <vector>
