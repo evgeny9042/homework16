@@ -41,7 +41,14 @@ sample_type parse(const std::string &s, unsigned long *c = nullptr)
   sample_type d;
   std::string str = s;
   for ( int i = 0; i < 8; i++ ) {
-    str = value(str, d(i));
+    double v;
+    str = value(str, v);
+    if ( c == nullptr ) {
+      // 4-тый параметр уменьшаем, а то сильно влияет на кластеризацию
+      if ( i == 3 && v > 100000 )  // уменьшаем, тока если он еще не был уменьшен до этого
+        v = v / 100000;
+    }
+    d(i) = v;
   }
   if (c)
     *c = stoi(str);
