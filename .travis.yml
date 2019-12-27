@@ -15,4 +15,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-  - curl -T realty-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uevgeny9042:$BINTRAY_API_KEY "https://api.bintray.com/content/rtti/homework/homework16/$TRAVIS_BUILD_NUMBER/ realty-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+  - curl -T klassification-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -uevgeny9042:$BINTRAY_API_KEY "https://api.bintray.com/content/rtti/homework/homework16/$TRAVIS_BUILD_NUMBER/ klassification-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"

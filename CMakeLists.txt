@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-project( realty VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
+project( klassification VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
 set ( SOURCES
 	rclst_main.cpp 		
